@@ -12,6 +12,7 @@
 #define LOWER 1
 #define RAISE 2
 #define ADJUST 3
+#define TENTATIVE 4
 
 / {
     // Activate ADJUST layer by pressing raise and lower
@@ -110,7 +111,7 @@
                 <&inc_dec_kp C_PREV C_NEXT>;
         };
 
-        layer_4 {
+        tentative_layer {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans          &trans          &trans           &trans
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans          &trans          &trans           &trans
